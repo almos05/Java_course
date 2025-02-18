@@ -1,5 +1,5 @@
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class App extends JFrame {
 
@@ -22,6 +22,10 @@ public class App extends JFrame {
         button.setBackground(Color.BLACK);
         button.setForeground(Color.WHITE); // цвет текста
         add(button);
+
+        MyButtonListener listener = new MyButtonListener();
+        button.addActionListener(listener);
+        //button.addActionListener((ActionEvent e) -> {}); // lambda функция
 
         setVisible(true); // Вывод окна
     }
