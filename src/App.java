@@ -23,7 +23,7 @@ public class App extends JFrame {
         button.setForeground(Color.WHITE); // цвет текста
         add(button);
 
-        MyButtonListener listener = new MyButtonListener();
+        MyButtonListener listener = new MyButtonListener(button);
         button.addActionListener(listener);
         //button.addActionListener((ActionEvent e) -> {}); // lambda функция
 
