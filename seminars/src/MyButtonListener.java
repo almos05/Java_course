@@ -20,6 +20,6 @@ public class MyButtonListener implements ActionListener { // Добавляем 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        this.component.setLocation(component.getX() + this.dx, component.getY()); // АХХАХАХАХХАХАХАХАХХА (меняем счётчик)
+        this.component.setLocation(component.getX() + this.dx, component.getY());
     }
 }
