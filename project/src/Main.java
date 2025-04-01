@@ -27,16 +27,20 @@ public class Main extends JFrame {
         displayTextLabel.setForeground(Color.WHITE);
         add(displayTextLabel);
 
-        MoveBackground backgroundPanel = new MoveBackground();
-        backgroundPanel.setBounds(0, 320, 1000, 180); // width по сути будет менять размер панели, а не изображения (отступ между картинками увеличиться, при увеличении width)
-        backgroundPanel.setOpaque(false);
-        add(backgroundPanel);
-
         ClickButton mainClickButton = new ClickButton();
         mainClickButton.setBounds(150, 100, 200, 200);
         mainClickButton.setOpaque(false);
         mainClickButton.setVisible(false); // изначально невидимый кликер
         add(mainClickButton);
+
+        FallingWings fallingWings = new FallingWings();
+        fallingWings.setBounds(0, 0, 800, 539);
+        add(fallingWings);
+
+        MoveBackground backgroundPanel = new MoveBackground();
+        backgroundPanel.setBounds(0, 320, 1000, 180); // width по сути будет менять размер панели, а не изображения (отступ между картинками увеличиться, при увеличении width)
+        backgroundPanel.setOpaque(false);
+        add(backgroundPanel);
 
         inputField.addKeyListener(new KeyAdapter() {
             @Override
