@@ -1,9 +1,7 @@
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
-// TODO сделать падающие крылья кфс (вокруг курсора)
+import javax.swing.*;
 
 public class Main extends JFrame {
     private JTextField inputField;
